@@ -1,5 +1,3 @@
 tmp-manifest.yaml
 .logs/
 projects/download/*
-projects/migration/saas_nonprod/*
-projects/migration/saas_prod/*
