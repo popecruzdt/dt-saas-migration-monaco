@@ -1,0 +1,35 @@
+manifestVersion: 1.0
+
+projects:
+- name: migration
+  path: projects/migration
+
+environmentGroups:
+- name: managed
+  environments:
+  - name: managed_nonprod
+    url:
+      value: https://{your-domain}/e/{your-environment-id}
+    auth:
+      token:
+        name: managed_nonprod_token
+  - name: managed_prod
+    url:
+      value: https://{your-domain}/e/{your-environment-id}
+    auth:
+      token:
+        name: managed_prod_token
+- name: saas
+  environments:
+  - name: saas_nonprod
+    url:
+      value: https://{your-environment-id}.live.dynatrace.com
+    auth:
+      token:
+        name: saas_nonprod_token
+  - name: saas_prod
+    url:
+      value: https://{your-environment-id}.live.dynatrace.com
+    auth:
+      token:
+        name: saas_prod_token
