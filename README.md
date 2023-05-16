@@ -24,6 +24,15 @@ environmentGroups:
       value: https://{your-environment-id}.live.dynatrace.com
 ```
 
+### Create Project Directories
+Create the migration project directories if they don't already exist.
+```
+mkdir projects/migration/saas_nonprod
+```
+```
+mkdir projects/migration/saas_prod
+```
+
 ### Generate Dynatrace API Tokens
 Create new (or use existing) Dynatrace API Tokens with the following permissions (token scopes):
 1. Managed
