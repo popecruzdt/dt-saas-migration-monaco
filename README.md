@@ -60,3 +60,11 @@ export saas_nonprod_token=dt0c01.<your-api-token-for-saas-nonprod>
 ```
 export saas_prod_token=dt0c01.<your-api-token-for-saas-prod>
 ```
+
+### Download a setting configuration from Managed
+Start by downloading a single settings schema from the `managed_nonprod` environment.\
+Reference the `download` command documentation for guidance:\
+https://www.dynatrace.com/support/help/shortlink/configuration-as-code-commands#download
+```
+monaco download --manifest tmp-manifest.yaml --environment managed_nonprod --force --output-folder projects/download --project managed_nonprod --settings-schema "builtin:management-zones" 
+```
