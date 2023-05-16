@@ -25,7 +25,7 @@ environmentGroups:
 ```
 
 ### Create Project Directories
-Create the migration project directories if they don't already exist.
+Create the migration project directories if they don't already exist, inside this base directory (`dt-saas-migration-monaco`).
 ```
 mkdir projects/migration/saas_nonprod
 ```
