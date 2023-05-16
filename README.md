@@ -82,3 +82,16 @@ Copy the contents of `projects/download/managed_nonprod` that you want to migrat
 ```
 cp -r projects/download/managed_nonprod/ projects/migration/saas_nonprod/
 ```
+
+### Deploy setting configurations project to SaaS environment
+Apply the setting configurations from the `saas_nonprod` project to the `saas_nonprod` environment using the `deploy` command.\
+Reference the `deploy` command documentation for guidance:\
+https://www.dynatrace.com/support/help/shortlink/configuration-as-code-commands#deploy
+##### Dry Run
+```
+monaco2 deploy tmp-manifest.yaml --environment saas_nonprod --project saas_nonprod --dry-run
+```
+##### Execute
+```
+monaco2 deploy tmp-manifest.yaml --environment saas_nonprod --project saas_nonprod
+```
