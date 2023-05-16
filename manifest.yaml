@@ -1,8 +1,10 @@
 manifestVersion: 1.0
 
 projects:
-- name: migration
-  path: projects/migration
+- name: saas_nonprod
+  path: projects/migration/saas_nonprod
+- name: saas_prod
+  path: projects/migration/saas_prod
 
 environmentGroups:
 - name: managed

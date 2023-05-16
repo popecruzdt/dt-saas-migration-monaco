@@ -1,3 +1,4 @@
 tmp-manifest.yaml
 .logs/
 projects/download/*
+projects/migration/*

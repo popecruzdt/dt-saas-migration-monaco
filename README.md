@@ -66,5 +66,19 @@ Start by downloading a single settings schema from the `managed_nonprod` environ
 Reference the `download` command documentation for guidance:\
 https://www.dynatrace.com/support/help/shortlink/configuration-as-code-commands#download
 ```
-monaco download --manifest tmp-manifest.yaml --environment managed_nonprod --force --output-folder projects/download --project managed_nonprod --settings-schema "builtin:management-zones" 
+monaco download --manifest manifest.yaml --environment managed_nonprod --force --output-folder projects/download --project managed_nonprod --settings-schema "builtin:management-zones" 
+```
+A project folder called `managed_nonprod` is created and contains a directory `builtinmanagement-zones`
+```
+ls -l projects/download/managed_nonprod/
+```
+> builtinmanagement-zones
+
+You can download specific configurations by specifying `--settings-schema "<schema-id>"`.\
+You can download all configurations by omitting the `--settings-schema` argument.  Note this will result in an overwhelming number of configurations in large environments.\
+
+### Copy setting configurations from Managed downloads to SaaS project directory
+Copy the contents of `projects/download/managed_nonprod` that you want to migrate to SaaS to the `projects/migration` directory.  For example, copy `projects/download/managed_nonprod/builtinmanagement-zones` so that you end up with `projects/migration/saas_nonprod/builtinmanagement-zones`.
+```
+cp -r projects/download/managed_nonprod/ projects/migration/saas_nonprod/
 ```
