@@ -98,9 +98,9 @@ Reference the `deploy` command documentation for guidance:\
 https://www.dynatrace.com/support/help/shortlink/configuration-as-code-commands#deploy
 ##### Dry Run
 ```
-monaco deploy tmp-manifest.yaml --environment saas_nonprod --project saas_nonprod --dry-run
+monaco deploy manifest.yaml --environment saas_nonprod --project saas_nonprod --dry-run
 ```
 ##### Execute
 ```
-monaco deploy tmp-manifest.yaml --environment saas_nonprod --project saas_nonprod
+monaco deploy manifest.yaml --environment saas_nonprod --project saas_nonprod
 ```
