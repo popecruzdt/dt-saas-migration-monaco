@@ -45,3 +45,18 @@ Create new (or use existing) Dynatrace API Tokens with the following permissions
 * Write settings
 * Create and read synthetic monitors, locations, and nodes
 * Write configuration
+
+### Set Access Token Environment Variables
+Dynatrace API Token values should not be stored in code, set them as environment variables each time you work with monaco.
+```
+export managed_nonprod_token=dt0c01.<your-api-token-for-managed-nonprod>
+```
+```
+export managed_prod_token=dt0c01.<your-api-token-for-managed-prod>
+```
+```
+export saas_nonprod_token=dt0c01.<your-api-token-for-saas-nonprod>
+```
+```
+export saas_prod_token=dt0c01.<your-api-token-for-saas-prod>
+```
